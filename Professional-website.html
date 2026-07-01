@@ -1,63 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Royal Infirmary of Birmingham | Dr William Allen Wilson
-</title>
+<title>Royal Infirmary of Birmingham | Dr William Allen Wilson</title>
 
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-
-/* =========================
-GLOBAL STYLES
-========================= */
-
-
-*{
-box-sizing:border-box;
-}
-
-
-html{
-scroll-behavior:smooth;
-}
-
-
 body{
-
 margin:0;
-font-family:'Open Sans', sans-serif;
+font-family:'Open-Sans', sans-serif;
 background:#f4f6f8;
 color:#333;
-
 }
-
-
-img,
-video{
-
-max-width:100%;
-height:auto;
-
-}
-
-
-/* =========================
-HEADER
-========================= */
-
 
 header{
-
 background:#003366;
 color:white;
 padding:20px 60px;
@@ -67,47 +27,19 @@ align-items:center;
 position:sticky;
 top:0;
 z-index:1000;
-
 }
-
-
-header h1{
-
-font-family:'Playfair Display', serif;
-font-size:22px;
-margin:0;
-
-}
-
-
-
-nav{
-
-display:flex;
-align-items:center;
-
-}
-
-
 
 nav a{
-
 color:white;
 margin-left:25px;
 text-decoration:none;
 font-weight:600;
 transition:.3s;
-
 }
-
 
 nav a:hover{
-
 color:#c8a45c;
-
 }
-
-
 
 .menu-toggle{
 
@@ -115,107 +47,113 @@ display:none;
 background:none;
 border:none;
 color:white;
-font-size:32px;
+font-size:30px;
 cursor:pointer;
 
 }
 
-
-
-/* =========================
-HERO SECTION
-========================= */
-
-
 .hero{
-
 display:flex;
 align-items:center;
 justify-content:space-around;
-gap:50px;
 padding:80px;
 background:#f8fafc;
 color:#14213d;
-
 }
-
-
 
 .hero-text{
-
 max-width:550px;
-
 }
-
 
 .hero h1{
-
 font-family:'Playfair Display', serif;
 font-size:48px;
-margin-bottom:10px;
-
 }
-
-
 
 .hero h2{
-
 color:#003366;
 font-size:26px;
-
 }
-
-
-
-.hero p{
-
-font-size:18px;
-line-height:1.7;
-
-}
-
-
 
 .doctor-image img{
-
 width:420px;
 height:520px;
 object-fit:cover;
-aspect-ratio:4 / 5;
-border-radius:12px;
+border-radius:10px;
 box-shadow:0 15px 40px rgba(0,0,0,.15);
+aspect-ratio:4 / 5;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+padding:40px 20px;
+text-align:center;
+}
+
+header{
+
+padding:20px;
+flex-direction:row;
+justify-content:space-between;
 
 }
 
 
+.menu-toggle{
+
+display:block;
+
+}
+
+
+nav{
+
+position:absolute;
+top:75px;
+left:0;
+width:100%;
+background:#003366;
+
+display:none;
+flex-direction:column;
+text-align:center;
+padding:20px 0;
+
+}
+
+
+nav.active{
+
+display:flex;
+
+}
+
+
+nav a{
+
+margin:15px 0;
+font-size:18px;
+
+}
+
+}
+
+.doctor-image img{
+width:300px;
+height:380px;
+margin-top:40px;
+}
+
 
 .btn{
-
-display:inline-block;
 background:#c8a45c;
 padding:15px 30px;
 color:white;
 text-decoration:none;
-border-radius:5px;
-font-weight:600;
-transition:.3s;
-
+border-radius:4px;
 }
-
-
-
-.btn:hover{
-
-background:#a88643;
-
-}
-
-
-
-/* =========================
-ABOUT SECTION
-========================= */
-
 
 .about{
 
@@ -226,15 +164,14 @@ text-align:center;
 }
 
 
-
 .about h3{
 
 font-family:'Playfair Display', serif;
 font-size:36px;
 color:#003366;
+margin-bottom:25px;
 
 }
-
 
 
 .about p{
@@ -247,12 +184,18 @@ color:#555;
 
 }
 
+.section{
+padding:80px 60px;
+text-align:center;
+background:#f4f6f8;
+}
 
-
-/* =========================
-VIDEO SECTION
-========================= */
-
+.section h3{
+font-family:'Playfair Display';
+font-size:36px;
+margin-bottom:20px;
+color :#003366
+}
 
 .video-section{
 
@@ -260,7 +203,6 @@ background:#f4f6f8;
 padding:80px 60px;
 
 }
-
 
 
 .video-container{
@@ -275,13 +217,12 @@ margin:auto;
 }
 
 
-
 .video-text{
 
 width:40%;
+text-align:left;
 
 }
-
 
 
 .video-text h3{
@@ -293,7 +234,6 @@ color:#003366;
 }
 
 
-
 .video-text p{
 
 font-size:17px;
@@ -302,13 +242,11 @@ line-height:1.8;
 }
 
 
-
 .video-box{
 
 width:50%;
 
 }
-
 
 
 .video-box video{
@@ -321,155 +259,13 @@ box-shadow:0 15px 40px rgba(0,0,0,.15);
 
 
 
-/* =========================
-RESPONSIVE DESIGN
-========================= */
-
-
-/* TABLETS */
-
-@media(max-width:1100px){
-
-
-.hero{
-
-padding:60px 40px;
-
-}
-
-
-.hero h1{
-
-font-size:40px;
-
-}
-
-
-.doctor-image img{
-
-width:350px;
-height:450px;
-
-}
-
-
-}
-
-
-/* MOBILE */
-
 @media(max-width:768px){
-
-
-
-header{
-
-padding:20px;
-flex-direction:row;
-
-}
-
-
-
-.menu-toggle{
-
-display:block;
-
-}
-
-
-
-nav{
-
-position:absolute;
-top:75px;
-left:0;
-width:100%;
-background:#003366;
-display:none;
-flex-direction:column;
-padding:20px 0;
-
-}
-
-
-
-nav.active{
-
-display:flex;
-
-}
-
-
-
-nav a{
-
-margin:15px 0;
-font-size:18px;
-
-}
-
-
-
-.hero{
-
-flex-direction:column;
-padding:40px 20px;
-text-align:center;
-
-}
-
-
-
-.hero h1{
-
-font-size:34px;
-
-}
-
-
-
-.hero h2{
-
-font-size:22px;
-
-}
-
-
-
-.doctor-image img{
-
-width:280px;
-height:360px;
-
-}
-
-
-
-.about,
-.video-section{
-
-padding:50px 20px;
-
-}
-
-
-
-.about h3,
-.video-text h3{
-
-font-size:30px;
-
-}
-
-
 
 .video-container{
 
 flex-direction:column;
 
 }
-
 
 
 .video-text,
@@ -480,48 +276,220 @@ text-align:center;
 
 }
 
+}
 
+.services{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card{
+
+position:relative;
+width:300px;
+height:350px;
+border-radius:12px;
+overflow:hidden;
+background-size:cover;
+background-position:center center;
+display:flex;
+align-items:flex-end;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+background-repeat:no-repeat;
+background-size:cover;
 
 }
 
 
+.card::before{
 
-/* SMALL PHONES */
-
-@media(max-width:400px){
-
-
-.hero h1{
-
-font-size:28px;
-
-}
-
-
-.btn{
-
-padding:12px 20px;
-
-}
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(
+to top,
+rgba(0,0,0,0.75),
+rgba(0,0,0,0.15)
+);
 
 }
 
 
+.card-content{
+
+position:relative;
+color:white;
+padding:25px;
+text-align:left;
+
+}
+
+
+.card h4{
+
+font-family:'Playfair Display', serif;
+font-size:24px;
+margin-bottom:10px;
+
+}
+
+
+.card p{
+
+font-size:15px;
+line-height:1.5;
+
+}
+
+.card-content h4,
+.card-content p{
+
+position:relative;
+z-index:2;
+
+}
+
+.card img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+.procedure-section{
+
+background:#003366;
+padding:80px 60px;
+text-align:center;
+}
+
+
+.procedure-section h3{
+
+font-family:'Playfair Display';
+font-size:36px;
+color:white;
+padding: ;
+
+}
+
+.journey-section{
+
+background:white;
+padding:80px 60px;
+text-align:center;
+
+}
+
+
+.journey-section h3{
+
+font-family:'Playfair Display';
+font-size:36px;
+color:#003366;
+
+}
+
+.contact{
+background:#0f1c2e;
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.contact input,
+.contact textarea{
+
+display:block;
+width:80%;
+max-width:500px;
+margin:15px auto;
+padding:15px;
+border:none;
+border-radius:5px;
+
+}
+
+.contact textarea{
+height:120px;
+}
+
+footer{
+background:#09111c;
+color:white;
+padding:50px 60px;
+}
+
+
+.footer-content{
+
+display:flex;
+justify-content:space-between;
+gap:40px;
+flex-wrap:wrap;
+
+}
+
+
+.footer-content h3{
+
+font-family:'Playfair Display', serif;
+color:#c8a45c;
+
+}
+
+
+.footer-social a{
+
+display:block;
+color:white;
+text-decoration:none;
+margin:10px 0;
+transition:.3s;
+
+}
+
+
+.footer-social a:hover{
+
+color:#c8a45c;
+
+}
+
+
+.footer-bottom{
+
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.2);
+text-align:center;
+
+}
+
+
+@media(max-width:768px){
+
+.footer-content{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+}
 
 </style>
 
 </head>
 
-
 <body>
-
-
 <header>
 
-
-<h1>
-Royal Infirmary of Birmingham
-</h1>
+<h1>Royal Infirmary of Birmingham</h1>
 
 
 <button class="menu-toggle" id="menu-toggle">
@@ -529,127 +497,125 @@ Royal Infirmary of Birmingham
 </button>
 
 
-
 <nav id="nav-menu">
 
-<a href="#hero">
-Home
-</a>
-
-<a href="#about">
-About
-</a>
-
-<a href="#services">
-Procedures
-</a>
-
-<a href="#contact">
-Contact
-</a>
-
+<a href="#hero">Home</a>
+<a href="#about">About</a>
+<a href="#services">Procedures</a>
+<a href="#contact">Contact</a>
 
 </nav>
 
-
 </header>
-
-
 
 <section class="hero" id="hero">
 
-
 <div class="hero-text">
-
 
 <h1>
 Dr William Allen Wilson
 </h1>
 
-
 <h2>
 Consultant Rhinoplasty Surgeon
 </h2>
-
 
 <p>
 Specialist in advanced rhinoplasty techniques,
 facial harmony, and functional nasal surgery.
 </p>
 
-
 <a href="#contact" class="btn">
 Book Private Consultation
 </a>
 
-
 </div>
-
 
 
 <div class="doctor-image">
 
-
-<img src="images/doctor.jpg"
+<a href=""><img src="Doc.jpg"
 alt="Consultant Rhinoplasty Surgeon">
+</a>
 
+</div>
+
+</section>
+
+<!-- About -->
+
+<section class="about" id="about">
+
+<h3>About Dr William Allen Wilson</h3>
+
+<p>
+Dr William Allen Wilson is a specialist rhinoplasty surgeon dedicated to
+achieving natural facial harmony through advanced surgical techniques.
+Patients from across the UK and internationally trust the Royal Infirmary
+of Birmingham for precision, safety, and outstanding results.
+</p>
+
+</section>
+
+
+<!-- Video Introduction Section -->
+
+<section class="video-section">
+
+<div class="video-container">
+
+<div class="video-text">
+
+<h3>Meet Dr William Allen Wilson</h3>
+
+<p>
+Discover the philosophy behind our approach to rhinoplasty surgery,
+patient care, and achieving natural results through advanced techniques.
+</p>
+
+<a href="#contact" class="btn">
+Book Consultation
+</a>
 
 </div>
 
 
+<div class="video-box">
+
+<video controls poster="Pp-1.jpeg">
+
+<source src="ppv1.mp4" type="video/mp4">
+
+Your browser does not support video playback.
+
+</video>
+
+</div>
+
+</div>
 
 </section>
 
 
-
-
-
-<section class="about" id="about">
-
-
-<h3>
-About Dr William Allen Wilson
-</h3>
-
-
-<p>
-
-Dr William Allen Wilson is a specialist rhinoplasty surgeon
-dedicated to achieving natural facial harmony through advanced
-surgical techniques. Patients trust the Royal Infirmary of Birmingham
-for precision, safety, and outstanding results.
-
-</p>
-
-
-</section>
-
-  <!-- =========================
-PROFESSIONAL PROFILE
-========================= -->
-
+<!-- Professional Profile -->
 
 <section class="section">
 
-
-<h3>
-Professional Profile
-</h3>
-
+<h3>Professional Profile</h3>
 
 <div class="services">
 
 
-<div class="card" style="background-image:url('images/profile-1.jpg')">
+
+
+<div class="card" style="background-image:url(pp3.jpg)">
 
 <div class="card-content">
 
-<h4>
-Specialty
-</h4>
+<h4>Specialty</h4>
 
 <p>
-Consultant Rhinoplasty and Facial Surgery Specialist.
+Consultant Rhinoplasty and Facial Surgery Specialist
 </p>
 
 </div>
@@ -657,17 +623,14 @@ Consultant Rhinoplasty and Facial Surgery Specialist.
 </div>
 
 
-
-<div class="card" style="background-image:url('images/profile-2.jpg')">
+<div class="card" style="background-image:url('pp2.jpg')">
 
 <div class="card-content">
 
-<h4>
-Experience
-</h4>
+<h4>Experience</h4>
 
 <p>
-Advanced surgical practice focused on patient care and precision.
+Years of advanced surgical practice and patient care.
 </p>
 
 </div>
@@ -675,15 +638,11 @@ Advanced surgical practice focused on patient care and precision.
 </div>
 
 
-
-
-<div class="card" style="background-image:url('images/profile-3.jpg')">
+<div class="card" style="background-image:url('pp7.jpg')">
 
 <div class="card-content">
 
-<h4>
-Approach
-</h4>
+<h4>Approach</h4>
 
 <p>
 Combining medical precision with natural aesthetic results.
@@ -694,557 +653,267 @@ Combining medical precision with natural aesthetic results.
 </div>
 
 
-</div>
 
-
-</section>
-
-
-
-
-
-<!-- =========================
-PROFESSIONAL EXCELLENCE
-========================= -->
-
-
-<section class="section">
-
-
-<h3>
-Professional Excellence
-</h3>
-
-
-
-<div class="services">
-
-
-
-<div class="card" style="background-image:url('images/training.jpg')">
-
+<div class="card" style="background-image:url('Pp-1.jpeg')">
 
 <div class="card-content">
 
-<h4>
-Specialized Training
-</h4>
-
-<p>
-Advanced surgical education and specialist rhinoplasty practice.
-</p>
-
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="card" style="background-image:url('images/safety.jpg')">
-
-
-<div class="card-content">
-
-<h4>
-Patient Safety
-</h4>
-
-
-<p>
-Evidence-based procedures with detailed consultation and follow-up.
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="card" style="background-image:url('images/results.jpg')">
-
-
-<div class="card-content">
-
-<h4>
-Natural Results
-</h4>
-
-
-<p>
-Focused on balanced outcomes that complement each patient's features.
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- =========================
-OUR PROCEDURES
-========================= -->
-
-
-<section class="procedure-section" id="services">
-
-
-<h3>
-Our Procedures
-</h3>
-
-
-
-<div class="services">
-
-
-
-<div class="card" style="background-image:url('images/rhinoplasty.jpg')">
-
-
-<div class="card-content">
-
-<h4>
-Primary Rhinoplasty
-</h4>
+<h4>Primary Rhinoplasty</h4>
 
 <p>
 Nasal reshaping surgery designed to improve facial balance.
 </p>
 
-
 </div>
 
 </div>
 
 
-
-
-
-<div class="card" style="background-image:url('images/revision.jpg')">
-
-
-<div class="card-content">
-
-<h4>
-Revision Rhinoplasty
-</h4>
-
-<p>
-Corrective surgery for patients who previously had nose surgery.
-</p>
-
-
 </div>
-
 </div>
-
-
-
-
-
-
-<div class="card" style="background-image:url('images/functional.jpg')">
-
-
-<div class="card-content">
-
-<h4>
-Functional Rhinoplasty
-</h4>
-
-<p>
-Improving breathing issues caused by structural nasal problems.
-</p>
-
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="card" style="background-image:url('images/nonsurgical.jpg')">
-
-
-<div class="card-content">
-
-<h4>
-Non-Surgical Nose
-</h4>
-
-<p>
-Temporary reshaping using advanced techniques.
-</p>
-
-
-</div>
-
-</div>
-
-
-
-</div>
-
-
 </section>
 
 
 
+<section class="section">
 
-
-
-
-<!-- =========================
-SURGICAL JOURNEY
-========================= -->
-
-
-<section class="journey-section">
-
-
-<h3>
-Your Surgical Journey
-</h3>
-
-
+<h3>Professional Excellence</h3>
 
 <div class="services">
 
-
-
-<div class="card" style="background-image:url('images/consultation.jpg')">
-
+<div class="card" style="background-image:url('pp03.jpg')">
 
 <div class="card-content">
 
+<h4>Specialized Training</h4>
 
-<h4>
-01. Consultation
-</h4>
+<p>
+Advanced surgical education and specialist rhinoplasty practice.
+</p>
+
+</div>
+
+</div>
 
 
+<div class="card" style="background-image:url('pp04.jpg')">
+
+<div class="card-content">
+
+<h4>Patient Safety</h4>
+
+<p>
+Evidence-based procedures with detailed consultation and follow-up.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card" style="background-image:url('pp')">
+
+<div class="card-content">
+
+<h4>Natural Results</h4>
+
+<p>
+Focused on balanced outcomes that complement each patient's features.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="procedure-section">
+
+<h3>Our Procedures</h3>
+
+<div class="services" id="services">
+
+<div class="card" style="background-image:url('pp6.jpeg')">
+  <div class="card-content">
+<h4>Primary Rhinoplasty</h4>
+<p>Nasal reshaping surgery designed to improve facial balance.</p>
+
+</div>
+</div>
+
+<div class="card" style="background-image:url('pp8.jpg')">
+
+<div class="card-content">
+<h4>Revision Rhinoplasty</h4>
+<p>Corrective surgery for patients who previously had nose surgery.</p>
+</div>
+</div>
+
+<div class="card" style="background-image:url('pp7.jpg')">
+
+<div class="card-content">
+<h4>Functional Rhinoplasty</h4>
+<p>Improving breathing issues caused by structural nasal problems.</p>
+</div>
+</div>
+
+<div class="card" style="background-image:url('pp02.jpg')">
+
+<div class="card-content">
+  
+<h4>Non-Surgical Nose</h4>
+<p>Temporary reshaping using advanced dermal filler techniques.</p>
+</div>
+
+</div>
+
+</section>
+
+ <!-- Surgical Journey -->
+
+<section class="journey-section">
+
+<h3>Your Surgical Journey</h3>
+
+<div class="services">
+
+<div class="card" style="background-image:url('pp8.jpg')">
+  <div class="card-content">
+<h4>01. Consultation</h4>
 <p>
 A detailed assessment and personalised treatment discussion.
 </p>
-
-
+</div>
 </div>
 
-
-</div>
-
-
-
-
-
-<div class="card" style="background-image:url('images/procedure.jpg')">
-
-
+<div class="card" style="background-image:url('pp5.jpg')">
 <div class="card-content">
-
-
-<h4>
-02. Procedure
-</h4>
-
-
-<p>
-Advanced surgical techniques performed with safety and precision.
+<h4>02. Procedure</h4>
+<p>  
+  Advanced surgical techniques performed with safety and precision.
 </p>
-
-
+</div>
 </div>
 
-
-</div>
-
-
-
-
-
-<div class="card" style="background-image:url('images/recovery.jpg')">
-
-
-<div class="card-content">
-
-
-<h4>
-03. Recovery
-</h4>
-
-
+<div class="card"  style="background-image:url('pp4.jpg')">
+  <div class="card-content">
+<h4>03. Recovery</h4>
 <p>
 Dedicated follow-up care throughout your healing process.
 </p>
-
-
+</div>
 </div>
 
-
 </div>
-
-
-
-</div>
-
 
 </section>
 
-
-
-
-
-
-
-<!-- =========================
-CONTACT
-========================= -->
-
+<!-- Contact Section -->
 
 <section class="contact" id="contact">
 
-
-<h3>
-Book Your Consultation
-</h3>
-
-
-
+<h3>Book Your Consultation</h3>
 
 <form>
 
-
 <input type="text" placeholder="Full Name">
-
 
 <input type="email" placeholder="Email Address">
 
-
 <input type="tel" placeholder="Phone Number">
-
 
 <textarea placeholder="Tell us how we can help"></textarea>
 
-
-
-<a href="https://www.instagram.com/yourprofile/"
-class="btn"
-target="_blank">
-
+<button class="btn" >
+<a href="https://www.instagram.com/drwilliamallenwilson?igsh=MWQ1amV3M3VrZmp1dQ==" target="_blank">
 Request Appointment
-
 </a>
-
-
+</button>
 
 </form>
 
-
-
 </section>
-
-
-
-
-
-
-
-<!-- =========================
-FOOTER
-========================= -->
-
 
 <footer>
 
-
-
 <div class="footer-content">
-
-
 
 <div class="footer-about">
 
-
-<h3>
-Royal Infirmary of Birmingham
-</h3>
-
+<h3>Royal Infirmary of Birmingham</h3>
 
 <p>
-
 Dr William Allen Wilson<br>
 Consultant Rhinoplasty Surgeon
-
 </p>
 
-
 </div>
-
-
-
-
 
 
 <div class="footer-social">
 
+<h3>Follow Us</h3>
 
-<h3>
-Follow Us
-</h3>
-
-
-
-<a href="https://www.instagram.com/yourprofile/"
-target="_blank">
-
+<a href="https://www.instagram.com/drwilliamallenwilson?igsh=MWQ1amV3M3VrZmp1dQ==" target="_blank">
 Instagram
-
 </a>
 
 
-
-<a href="https://www.linkedin.com/in/yourprofile/"
-target="_blank">
-
+<a href="https://www.linkedin.com/in/yourprofile/" target="_blank">
 LinkedIn
-
 </a>
 
 
 
 </div>
-
-
-
-
-
 
 
 <div class="footer-contact">
 
-
-<h3>
-Contact
-</h3>
-
-
+<h3>Contact</h3>
 
 <p>
-Email:
-info@royalinfirmarybirmingham.com
+Email: info@royalinfirmarybirmingham.com
 </p>
-
-
-
+<a href="https://web.whatsapp.com/">
 <p>
-WhatsApp:
-+44 7350347826
+Whatsapp : +44 7350347826
 </p>
-
-
+</a>
 
 </div>
 
-
-
-
 </div>
-
-
-
 
 
 <div class="footer-bottom">
 
-
 <p>
-
-© 2026 Royal Infirmary of Birmingham |
-All Rights Reserved
-
+© 2010 Royal Infirmary of Birmingham | All Rights Reserved
 </p>
-
 
 </div>
 
-
-
 </footer>
-
-
-
-
-
-
 <script>
 
+const menuToggle = document.getElementById("menu-toggle");
 
-const menuToggle =
-document.getElementById("menu-toggle");
-
-
-const navMenu =
-document.getElementById("nav-menu");
+const navMenu = document.getElementById("nav-menu");
 
 
-
-menuToggle.addEventListener("click",()=>{
-
+menuToggle.addEventListener("click", function(){
 
 navMenu.classList.toggle("active");
 
-
 });
-
-
-
-
-
-// Close mobile menu when clicking a link
-
-document.querySelectorAll("#nav-menu a")
-.forEach(link=>{
-
-
-link.addEventListener("click",()=>{
-
-
-navMenu.classList.remove("active");
-
-
-});
-
-
-});
-
 
 
 </script>
 
-
-
-
 </body>
 
 </html>
+
