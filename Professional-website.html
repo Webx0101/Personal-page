@@ -1,1 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Royal Infirmary of Birmingham | Dr William Allen Wilson
+</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+/* =========================
+GLOBAL STYLES
+========================= */
+
+
+*{
+box-sizing:border-box;
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+body{
+
+margin:0;
+font-family:'Open Sans', sans-serif;
+background:#f4f6f8;
+color:#333;
+
+}
+
+
+img,
+video{
+
+max-width:100%;
+height:auto;
+
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+
+header{
+
+background:#003366;
+color:white;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+
+header h1{
+
+font-family:'Playfair Display', serif;
+font-size:22px;
+margin:0;
+
+}
+
+
+
+nav{
+
+display:flex;
+align-items:center;
+
+}
+
+
+
+nav a{
+
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+
+}
+
+
+nav a:hover{
+
+color:#c8a45c;
+
+}
+
+
+
+.menu-toggle{
+
+display:none;
+background:none;
+border:none;
+color:white;
+font-size:32px;
+cursor:pointer;
+
+}
+
+
+
+/* =========================
+HERO SECTION
+========================= */
+
+
+.hero{
+
+display:flex;
+align-items:center;
+justify-content:space-around;
+gap:50px;
+padding:80px;
+background:#f8fafc;
+color:#14213d;
+
+}
+
+
+
+.hero-text{
+
+max-width:550px;
+
+}
+
+
+.hero h1{
+
+font-family:'Playfair Display', serif;
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+
+
+.hero h2{
+
+color:#003366;
+font-size:26px;
+
+}
+
+
+
+.hero p{
+
+font-size:18px;
+line-height:1.7;
+
+}
+
+
+
+.doctor-image img{
+
+width:420px;
+height:520px;
+object-fit:cover;
+aspect-ratio:4 / 5;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+.btn{
+
+display:inline-block;
+background:#c8a45c;
+padding:15px 30px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:600;
+transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+background:#a88643;
+
+}
+
+
+
+/* =========================
+ABOUT SECTION
+========================= */
+
+
+.about{
+
+background:white;
+padding:80px 60px;
+text-align:center;
+
+}
+
+
+
+.about h3{
+
+font-family:'Playfair Display', serif;
+font-size:36px;
+color:#003366;
+
+}
+
+
+
+.about p{
+
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#555;
+
+}
+
+
+
+/* =========================
+VIDEO SECTION
+========================= */
+
+
+.video-section{
+
+background:#f4f6f8;
+padding:80px 60px;
+
+}
+
+
+
+.video-container{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+max-width:1200px;
+margin:auto;
+
+}
+
+
+
+.video-text{
+
+width:40%;
+
+}
+
+
+
+.video-text h3{
+
+font-family:'Playfair Display', serif;
+font-size:36px;
+color:#003366;
+
+}
+
+
+
+.video-text p{
+
+font-size:17px;
+line-height:1.8;
+
+}
+
+
+
+.video-box{
+
+width:50%;
+
+}
+
+
+
+.video-box video{
+
+width:100%;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+
+/* TABLETS */
+
+@media(max-width:1100px){
+
+
+.hero{
+
+padding:60px 40px;
+
+}
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+.doctor-image img{
+
+width:350px;
+height:450px;
+
+}
+
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+
+header{
+
+padding:20px;
+flex-direction:row;
+
+}
+
+
+
+.menu-toggle{
+
+display:block;
+
+}
+
+
+
+nav{
+
+position:absolute;
+top:75px;
+left:0;
+width:100%;
+background:#003366;
+display:none;
+flex-direction:column;
+padding:20px 0;
+
+}
+
+
+
+nav.active{
+
+display:flex;
+
+}
+
+
+
+nav a{
+
+margin:15px 0;
+font-size:18px;
+
+}
+
+
+
+.hero{
+
+flex-direction:column;
+padding:40px 20px;
+text-align:center;
+
+}
+
+
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+
+
+.doctor-image img{
+
+width:280px;
+height:360px;
+
+}
+
+
+
+.about,
+.video-section{
+
+padding:50px 20px;
+
+}
+
+
+
+.about h3,
+.video-text h3{
+
+font-size:30px;
+
+}
+
+
+
+.video-container{
+
+flex-direction:column;
+
+}
+
+
+
+.video-text,
+.video-box{
+
+width:100%;
+text-align:center;
+
+}
+
+
+
+}
+
+
+
+/* SMALL PHONES */
+
+@media(max-width:400px){
+
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+
+.btn{
+
+padding:12px 20px;
+
+}
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<h1>
+Royal Infirmary of Birmingham
+</h1>
+
+
+<button class="menu-toggle" id="menu-toggle">
+☰
+</button>
+
+
+
+<nav id="nav-menu">
+
+<a href="#hero">
+Home
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#services">
+Procedures
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+<section class="hero" id="hero">
+
+
+<div class="hero-text">
+
+
+<h1>
+Dr William Allen Wilson
+</h1>
+
+
+<h2>
+Consultant Rhinoplasty Surgeon
+</h2>
+
+
+<p>
+Specialist in advanced rhinoplasty techniques,
+facial harmony, and functional nasal surgery.
+</p>
+
+
+<a href="#contact" class="btn">
+Book Private Consultation
+</a>
+
+
+</div>
+
+
+
+<div class="doctor-image">
+
+
+<img src="images/doctor.jpg"
+alt="Consultant Rhinoplasty Surgeon">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section class="about" id="about">
+
+
+<h3>
+About Dr William Allen Wilson
+</h3>
+
+
+<p>
+
+Dr William Allen Wilson is a specialist rhinoplasty surgeon
+dedicated to achieving natural facial harmony through advanced
+surgical techniques. Patients trust the Royal Infirmary of Birmingham
+for precision, safety, and outstanding results.
+
+</p>
+
+
+</section>
+
+  <!-- =========================
+PROFESSIONAL PROFILE
+========================= -->
+
+
+<section class="section">
+
+
+<h3>
+Professional Profile
+</h3>
+
+
+<div class="services">
+
+
+<div class="card" style="background-image:url('images/profile-1.jpg')">
+
+<div class="card-content">
+
+<h4>
+Specialty
+</h4>
+
+<p>
+Consultant Rhinoplasty and Facial Surgery Specialist.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="card" style="background-image:url('images/profile-2.jpg')">
+
+<div class="card-content">
+
+<h4>
+Experience
+</h4>
+
+<p>
+Advanced surgical practice focused on patient care and precision.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="card" style="background-image:url('images/profile-3.jpg')">
+
+<div class="card-content">
+
+<h4>
+Approach
+</h4>
+
+<p>
+Combining medical precision with natural aesthetic results.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- =========================
+PROFESSIONAL EXCELLENCE
+========================= -->
+
+
+<section class="section">
+
+
+<h3>
+Professional Excellence
+</h3>
+
+
+
+<div class="services">
+
+
+
+<div class="card" style="background-image:url('images/training.jpg')">
+
+
+<div class="card-content">
+
+<h4>
+Specialized Training
+</h4>
+
+<p>
+Advanced surgical education and specialist rhinoplasty practice.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="card" style="background-image:url('images/safety.jpg')">
+
+
+<div class="card-content">
+
+<h4>
+Patient Safety
+</h4>
+
+
+<p>
+Evidence-based procedures with detailed consultation and follow-up.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="card" style="background-image:url('images/results.jpg')">
+
+
+<div class="card-content">
+
+<h4>
+Natural Results
+</h4>
+
+
+<p>
+Focused on balanced outcomes that complement each patient's features.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- =========================
+OUR PROCEDURES
+========================= -->
+
+
+<section class="procedure-section" id="services">
+
+
+<h3>
+Our Procedures
+</h3>
+
+
+
+<div class="services">
+
+
+
+<div class="card" style="background-image:url('images/rhinoplasty.jpg')">
+
+
+<div class="card-content">
+
+<h4>
+Primary Rhinoplasty
+</h4>
+
+<p>
+Nasal reshaping surgery designed to improve facial balance.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="card" style="background-image:url('images/revision.jpg')">
+
+
+<div class="card-content">
+
+<h4>
+Revision Rhinoplasty
+</h4>
+
+<p>
+Corrective surgery for patients who previously had nose surgery.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="card" style="background-image:url('images/functional.jpg')">
+
+
+<div class="card-content">
+
+<h4>
+Functional Rhinoplasty
+</h4>
+
+<p>
+Improving breathing issues caused by structural nasal problems.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="card" style="background-image:url('images/nonsurgical.jpg')">
+
+
+<div class="card-content">
+
+<h4>
+Non-Surgical Nose
+</h4>
+
+<p>
+Temporary reshaping using advanced techniques.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+SURGICAL JOURNEY
+========================= -->
+
+
+<section class="journey-section">
+
+
+<h3>
+Your Surgical Journey
+</h3>
+
+
+
+<div class="services">
+
+
+
+<div class="card" style="background-image:url('images/consultation.jpg')">
+
+
+<div class="card-content">
+
+
+<h4>
+01. Consultation
+</h4>
+
+
+<p>
+A detailed assessment and personalised treatment discussion.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card" style="background-image:url('images/procedure.jpg')">
+
+
+<div class="card-content">
+
+
+<h4>
+02. Procedure
+</h4>
+
+
+<p>
+Advanced surgical techniques performed with safety and precision.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card" style="background-image:url('images/recovery.jpg')">
+
+
+<div class="card-content">
+
+
+<h4>
+03. Recovery
+</h4>
+
+
+<p>
+Dedicated follow-up care throughout your healing process.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+CONTACT
+========================= -->
+
+
+<section class="contact" id="contact">
+
+
+<h3>
+Book Your Consultation
+</h3>
+
+
+
+
+<form>
+
+
+<input type="text" placeholder="Full Name">
+
+
+<input type="email" placeholder="Email Address">
+
+
+<input type="tel" placeholder="Phone Number">
+
+
+<textarea placeholder="Tell us how we can help"></textarea>
+
+
+
+<a href="https://www.instagram.com/yourprofile/"
+class="btn"
+target="_blank">
+
+Request Appointment
+
+</a>
+
+
+
+</form>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+
+<footer>
+
+
+
+<div class="footer-content">
+
+
+
+<div class="footer-about">
+
+
+<h3>
+Royal Infirmary of Birmingham
+</h3>
+
+
+<p>
+
+Dr William Allen Wilson<br>
+Consultant Rhinoplasty Surgeon
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="footer-social">
+
+
+<h3>
+Follow Us
+</h3>
+
+
+
+<a href="https://www.instagram.com/yourprofile/"
+target="_blank">
+
+Instagram
+
+</a>
+
+
+
+<a href="https://www.linkedin.com/in/yourprofile/"
+target="_blank">
+
+LinkedIn
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-contact">
+
+
+<h3>
+Contact
+</h3>
+
+
+
+<p>
+Email:
+info@royalinfirmarybirmingham.com
+</p>
+
+
+
+<p>
+WhatsApp:
++44 7350347826
+</p>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+
+© 2026 Royal Infirmary of Birmingham |
+All Rights Reserved
+
+</p>
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+
+
+<script>
+
+
+const menuToggle =
+document.getElementById("menu-toggle");
+
+
+const navMenu =
+document.getElementById("nav-menu");
+
+
+
+menuToggle.addEventListener("click",()=>{
+
+
+navMenu.classList.toggle("active");
+
+
+});
+
+
+
+
+
+// Close mobile menu when clicking a link
+
+document.querySelectorAll("#nav-menu a")
+.forEach(link=>{
+
+
+link.addEventListener("click",()=>{
+
+
+navMenu.classList.remove("active");
+
+
+});
+
+
+});
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
